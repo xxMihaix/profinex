@@ -12,9 +12,17 @@ html, body {
 }
 
 #all-pc-nav, #pc-nav{
-    background-color: rgb(18, 158, 20);
+    background-color: rgb(17, 128, 19, 0.85);
+    filter: blur();
     width: 100%;
     position: fixed;
+}
+
+#all-mobile-nav, #mobile-nav{
+    background-color: rgb(17, 128, 19, 0.85);
+    width: 100%;
+    position: fixed;
+    display: none;
 }
 
 #all-pc-navbar{
@@ -24,6 +32,16 @@ html, body {
     height: 60px;
     padding-left: 100px;
     padding-right: 100px;
+    z-index: 999;
+}
+
+#all-mobile-navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 60px;
+    padding-left: 70px;
+    padding-right: 70px;
     z-index: 999;
 }
 
@@ -77,7 +95,7 @@ li{
 }
 
 .nav-btn:hover{
-    background-color: rgb(17, 178, 20);
+    background-color: rgb(16, 148, 19);
 
     border-radius: 5px;
     transition: 0.3s;
@@ -85,10 +103,10 @@ li{
 
 #drop1{
     display: block;
-    top: 50px;
+    top: 55px;
     left: -25px;
     position: absolute;
-    background-color: rgb(20, 160, 22);
+    background-color: rgb(17, 128, 19, 0.85);
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -112,10 +130,10 @@ li{
 
 #drop2{
     display: block;
-    top: 50px;
+    top: 55px;
     left: -37px;
     position: absolute;
-    background-color: rgb(20, 160, 22);
+    background-color: rgb(17, 128, 19, 0.85);
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -144,10 +162,10 @@ li{
 
 #drop3{
     display: block;
-    top: 50px;
+    top: 55px;
     left: 22px;
     position: absolute;
-    background-color: rgb(20, 160, 22);
+    background-color: rgb(17, 128, 19, 0.85);
     list-style-type: none;
     margin: 0px;
     padding: 0px;
@@ -181,7 +199,7 @@ li{
 }
 
 .drop li:hover{
-    background-color: rgb(17, 178, 20);
+    background-color: rgb(16, 148, 19);
     transition: 0.3s;
 }
 
@@ -279,9 +297,108 @@ main{
     color: green;
 }
 
-#lucru{
+.lucru{
     text-align: center;
     font-weight: bold;
     font-size: 30px;
     color: green;
 }
+
+#titlee-container{
+    max-width: 700px;
+}
+
+/**************   Menu   *****************/
+
+#menu{
+    width: 50px;
+    filter: invert(1);
+}
+
+/*****************************************/
+
+@media ( width < 850px){
+    #pc-nav{
+        display: none;
+    }
+    #mobile-nav{
+        display: block;
+    }
+}
+
+@media ( width < 800px){
+    .row{
+        flex-direction: column;
+    }
+    .column{
+        width: 100%;
+    }
+    .hero{
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 60px;
+    }
+}
+
+@media ( width < 640px){
+    .column{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .btn{
+        font-size: 15px;
+    }
+    .hero{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media ( width < 535px){
+    #titlee{
+        font-size: 25px;
+    }
+
+    #first-text{
+        font-size: 18px;
+    }
+
+    .hero{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media ( width < 480px){
+    #button{
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hero{
+        padding-top: 60px;
+    }
+
+    #all-mobile-navbar{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .lucru{
+        font-size: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media ( width < 445px){
+    #titlee{
+        font-size: 22px;
+    }
+
+    #first-text{
+        font-size: 17px;
+    }
+}
+
+
