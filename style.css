@@ -30,8 +30,8 @@ html, body {
     justify-content:space-between;
     align-items: center;
     height: 60px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
     z-index: 999;
 }
 
@@ -131,7 +131,7 @@ li{
 #drop2{
     display: block;
     top: 55px;
-    left: -37px;
+    left: -50px;
     position: absolute;
     background-color: rgb(17, 128, 19, 0.85);
     list-style-type: none;
@@ -310,20 +310,136 @@ main{
 
 /**************   Menu   *****************/
 
-#menu{
-    width: 50px;
+.menu{
+    width: 45px;
     filter: invert(1);
 }
 
+#mobile-drop{
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(17, 128, 19, 0.95);
+    position: fixed;
+    left: -300px;
+    transition: 0.5s;
+}
+
+#mobile-title{
+    background-color: rgb(17, 128, 19);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 70px;
+}
+
+.ndrop{
+    color: white;
+}
+
+#ndrop1 {
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    max-height: 0px;
+    transition: all 1s ease;
+    pointer-events: none;
+}
+
+#ndrop2 {
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    max-height: 0px;
+    transition: all 1s ease;
+    pointer-events: none;
+}
+
+#ndrop3 {
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    opacity: 0;
+    max-height: 0px;
+    transition: all 1s ease;
+    pointer-events: none;
+}
+
+#ndrop1.show {
+    max-height: 500px; 
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#ndrop2.show {
+    max-height: 500px; 
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#ndrop3.show {
+    max-height: 500px; 
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.ndrop{ 
+    gap: 4px;
+}
+
+#mobile-title{
+        height: 60px;
+        width: 100%;
+        color: rgb(17, 128, 19);
+    }
+
 /*****************************************/
 
-@media ( width < 850px){
+#acasadrop, #nav-btn4, #nav-btn5, #nav-btn6, #contact{
+    display: none;
+}
+
+#open1{
+    display: block;
+}
+
+@media ( min-width: 995px){
+    #open1{
+        display: none;
+    }
+}
+
+@media(max-width: 995px){
+    #nav-btn3{
+        display: none;
+    }
+    #nav-btn6{
+        display: block;
+    }
+}
+
+@media(max-width: 850px){
+    #nav-btn2{
+        display: none;
+    }
+    #nav-btn1{
+        position: relative;
+        left: 20px;
+    }
+    #nav-btn5{
+        display: block;
+    }
+}
+
+@media ( width < 750px){
     #pc-nav{
         display: none;
     }
     #mobile-nav{
         display: block;
     }
+    #acasadrop, #nav-btn4, #nav-btn5, #nav-btn6, #contact{
+    display: block;
+}
+
 }
 
 @media ( width < 800px){
