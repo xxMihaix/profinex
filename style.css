@@ -578,6 +578,10 @@ main{
     }
 }
 
+.background p{
+    margin: 20px;
+}
+
 @media(max-width: 470px){
     .element-img{
         width: 100%;
@@ -590,11 +594,12 @@ main{
     }
     #elements{
         gap: 0px;
+        padding: 10px;
     }
-}
 
-.background p{
-    margin: 20px;
+    .background p{
+        margin: 5px;
+    }
 }
 
 .background{
@@ -605,4 +610,157 @@ main{
     background-size: cover;
     border-radius: 15px;
     box-shadow: 10px 10px 10px rgb(196, 190, 190);
+}
+
+/************ SERIVCES *************/
+
+.serv-svg{
+    width: 100px;
+    color: rgb(3, 116, 3);
+}
+
+.cont p{
+    color: rgb(3, 116, 3);
+    font-weight: bold;
+    margin: 0px;
+}
+
+#elements2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container-s{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.serv{
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.el-s{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: 3px solid green;
+    border-radius: 15px;
+    min-width: 180px;
+    padding: 10px;
+}
+
+#flex{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 80px;
+}
+
+@media(max-width: 900px){
+    #flex{
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 500px){
+    .cont p{
+        font-size: 14px;
+    }
+    .serv-svg{
+        width: 80px;
+    }
+    .el-s{
+        gap: 10px;
+    }
+    .cont{
+        min-width: 0px;
+        width: 150px;
+    }
+    #elements2{
+        gap: 10px;
+    }
+    #flex{
+        gap: 10px;
+    }
+}
+
+/********************  WHY TO PICK US?  *********************/
+
+.de-ce-noi{
+    border-top: 3px solid green;
+    margin: 10px;
+}
+
+.motiv-boxuri {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.card {
+  flex: 1 1 150px;
+  width: 320px;
+  background: url(Images/Background3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 15px 15px 15px rgb(219, 217, 217);
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  height: 170px;
+}
+#sp{
+    text-align: center;
+}
+@media (max-width: 768px) {
+  .motiv-boxuri {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media(max-width: 500px){
+    .card{
+        height: 10px;
+    }
+}
+
+h3, .card p{
+    color: #fafafa;
+}
+
+h2{
+    color: green;
+}
+
+#cont-footer{
+    position: bottom;
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
