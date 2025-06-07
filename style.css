@@ -559,7 +559,7 @@ main{
 }
 
 .img-container{
-    max-width: 550px;
+    width: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -578,11 +578,10 @@ main{
     }
 }
 
-.background p{
-    margin: 20px;
-}
-
 @media(max-width: 470px){
+    .img-container{
+        width: 100%;
+    }
     .element-img{
         width: 100%;
     }
@@ -599,6 +598,9 @@ main{
 
     .background p{
         margin: 5px;
+    }
+    .container-s{
+        width: 100%;
     }
 }
 
@@ -630,16 +632,21 @@ main{
     height: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap: 40px;
+    padding: 22px;
 }
 
 .container-s{
+    width: auto;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: 3px solid green;
+    border-radius: 15px;
 }
 
 .serv{
@@ -653,7 +660,7 @@ main{
 .el-s{
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 0px;
     flex-wrap: wrap;
     padding: 10px;
 }
@@ -664,10 +671,10 @@ main{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    border: 3px solid green;
+    border: none;
     border-radius: 15px;
     min-width: 180px;
-    padding: 10px;
+    padding: 0px;
 }
 
 #flex{
@@ -708,9 +715,20 @@ main{
 
 /********************  WHY TO PICK US?  *********************/
 
+.alg{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
 .de-ce-noi{
     border-top: 3px solid green;
+    max-width: 1000px;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .motiv-boxuri {
@@ -718,9 +736,13 @@ main{
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
+  padding: 20px;
 }
 .card {
-  flex: 1 1 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   width: 320px;
   background: url(Images/Background3.jpg);
   background-repeat: no-repeat;
@@ -735,17 +757,6 @@ main{
 #sp{
     text-align: center;
 }
-@media (max-width: 768px) {
-  .motiv-boxuri {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-@media(max-width: 500px){
-    .card{
-        height: 10px;
-    }
-}
 
 h3, .card p{
     color: #fafafa;
@@ -755,12 +766,89 @@ h2{
     color: green;
 }
 
+@media(max-width: 770px){
+    .card{
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    #flex{
+        width: 100%;
+    }
+    .container-s{
+        width: 100%;
+    }
+    .el-s{
+        gap: 0px;
+    }
+}
+
+@media(max-width: 372px){
+    .cont{
+        width: 125px;
+    }
+}
+
+@media(max-width: 900px){
+    #flex{
+        gap: 40px;
+    }
+}
+
+/*****************  FOOTER  *******************/
+
 #cont-footer{
     position: bottom;
-    background-color: green;
+    background: url(Images/Background3.jpg);
     color: white;
     text-align: center;
-    padding: 5px;
+    padding: 15px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footer-flex{
+    display: flex;
+    gap: 15%;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.flexx a{
+    color: white;
+    text-decoration: none;
+}
+
+#spec{
+    text-decoration: underline;
+}
+
+@media(max-width: 550px){
+    #footer-flex{
+        flex-direction: column;
+    }
+    #flex2{
+        margin-top: 30px;
+    }
+}
+
+#eu{
+    display: flex;
+    gap: 15px;
+}
+
+#yt{
+    top: 100px;
+    width: 45px;
+}
+
+#ytc{
+    margin-top: 10px;
+    cursor: pointer;
 }
