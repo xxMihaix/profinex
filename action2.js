@@ -1,16 +1,22 @@
 
+/*
 const acasa1 = document.getElementById('acasa');
 const acasadrop1 = document.getElementById('acasadrop');
 
 const acas = [acasa1, acasadrop1];
 
 acas.forEach(acasa => {
-    if(!acasa) return;
     acasa.addEventListener('click', function(){
         window.location.href= "index.html";
     });
 });
 
+
+acas.forEach(el => function(){
+    el.addEventListener('click', function(){
+        window.location.href= "index.html";
+    })
+})
 
 const contact3 = document.getElementById('contact1');
 const contact2 = document.getElementById('contact');
@@ -19,24 +25,18 @@ const cont = document.getElementById('btn2');
 const contacts = [contact3, contact2, cont];
 
 contacts.forEach(contact => {
-    if(!contact) return;
     contact.addEventListener('click', function() {
         const mobileDrop = document.getElementById('mobile-drop');
         mobileDrop.style.left = '-300px';
         const footer = contact.dataset.footer;
-        const idBottom = contact.dataset.target;
+        const idBottom = contact.dataset.id;
         window.location.href=`${footer}.html#${idBottom}`;
    })
 })
 
-document.addEventListener("DOMContentLoaded", function () {
-    const bt = document.getElementById('btn1');
-    if (!bt) return;
-    bt.addEventListener('click', function() {
-        window.location.href = "contabilitate.html";
-    });
-});
-
+document.getElementById('btn1').addEventListener('click', function(){
+    window.location.href = "contabilitate.html";
+})
 
 
 const p1 = document.getElementById('p1');
@@ -62,8 +62,9 @@ p = [p1, p2, p3, p4, p5, p6, p7, p8];
 m = [m1, m2, m3, m4, m5, m6, m7, m8];
 
 
+
+
 p.forEach(p => {
-    if(!p) return;
     p.addEventListener('click', function(){
         const page = p.dataset.page;
         const section = p.dataset.section;
@@ -72,7 +73,6 @@ p.forEach(p => {
     })
 })
 m.forEach(m => {
-    if(!m) return;
     m.addEventListener('click', function(){
         const page = m.dataset.page;
         const section = m.dataset.section;
@@ -81,15 +81,4 @@ m.forEach(m => {
     })
 })
 
-/************************  GG  ****************************/
-
-const svg = document.querySelectorAll('.cont');
-
-svg.forEach(svg => {
-    svg.addEventListener('click', function(){
-        const page = svg.dataset.page;
-        const section = svg.dataset.section;
-
-        window.location.href = `${page}.html#${section}`;
-    })
-})
+*/

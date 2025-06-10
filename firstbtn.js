@@ -157,9 +157,3 @@ contact.addEventListener('click', function() {
         ndrop3.classList.remove('show');
 })
 
-document.addEventListener('DOMContentLoaded', function(){
-    const yt = document.getElementById('ytc');
-    yt.addEventListener('click', function(){
-     window.location.href = 'https://www.youtube.com/@ItsMihaii';
-}) 
-})

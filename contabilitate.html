@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profinex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pagini.css">
+    <link rel="icon" href="Images/newlogo.jpg">
+</head>
+<body> 
+    
+<header>
+    <!-- PC -->
+<div id="pc-nav">          
+    <div id="all-pc-navbar">
+        <div id="logo-title">
+            <!--<img src="Images/logo.png" id="logo">-->
+            <p id="big-title">Profinex</p>
+        </div>
+
+        <ul id="navbar">
+            <li><button class="nav-btn" id="acasa">Acasa</button></li>
+            
+            <li id="li1"><button id="nav-btn1" class="nav-btn">Contabilitate</button>
+            <ul id="drop1" class="drop">
+                <li id="p1" data-page="contabilitate" data-section="completa">Contabilitate Completa</li>
+                <li id="p2" data-page="contabilitate" data-section="salarizare">Salarizare</li>
+                <li id="p3" data-page="contabilitate" data-section="analiza">Analiza Financiara</li>
+                <li id="p4" data-page="contabilitate" data-section="juridice">Servicii Juridice</li>
+            </ul></li>
+            
+            <li id="li2"><button id="nav-btn2" class="nav-btn">Audit</button>
+            <ul id="drop2" class="drop">
+                <li id="p5" data-page="audit" data-section="audit-financiar">Audit Financiar</li>
+                <li id="p6" data-page="audit" data-section="audit-statutar">Audit Statutar</li>
+            </ul></li>
+
+            <li id="li3"><button id="nav-btn3" class="nav-btn">Evaluari Imobiliare</button>
+            <ul id="drop3" class="drop">
+                <li id="p7" data-page="evaluare" data-section="evaluare">Evaluare</li>
+                <li id="p8" data-page="evaluare" data-section="acte">Acte Necesare</li>
+            </ul></li>
+
+            <li><button id="contact1" data-footer="contabilitate"  data-target="footerid" class="nav-btn">Contact</button></li>
+
+            <li><img src="Images/menu.svg" class="menu" id="open1"></li>
+        </ul>
+
+
+    </div>  
+    </div>  
+
+    <!-- Mobile -->
+
+    <div id="mobile-nav">          
+    <div id="all-mobile-navbar">
+        <div id="logo-title">
+            <!--<img src="Images/logo.png" id="logo">-->
+            <p id="big-title">Profinex</p>
+        </div>
+<!--
+        <ul id="navbar">
+            <li id="li1"><button id="nav-btn1" class="nav-btn">Contabilitate</button>
+            <ul id="drop1" class="drop">
+                <li>Contabilitate Completa</li>
+                <li>Salarizare</li>
+                <li>Analiza Financiara</li>
+                <li>Servicii Juridice</li>
+            </ul></li>
+            
+            <li id="li2"><button id="nav-btn2" class="nav-btn">Audit</button>
+            <ul id="drop2" class="drop">
+                <li>Audit Financiar</li>
+                <li>Audit Statutar</li>
+            </ul></li>
+
+            <li id="li3"><button id="nav-btn3" class="nav-btn">Evaluari Imobiliare</button>
+            <ul id="drop3" class="drop">
+                <li>Evaluare</li>
+                <li>Acte Necesare</li>
+            </ul></li>
+
+            <li><button id="contact" class="nav-btn">Contact</button></li>
+        </ul> --> 
+
+        <img src="Images/menu.svg" class="menu" id="open">
+
+    </div>  
+    </div>  
+    </header>
+
+    <div id="mobile-drop">
+        <div id="mobile-title">
+            <p id="big-title">Profinex</p>
+            <img src="Images/close.svg" class="menu" id="close">
+        </div>
+        <div class="content-drop">
+            <ul id="navbar-drop">
+            
+                <li><button class="nav-btn" id="acasadrop">Acasa</button></li>
+            
+            <li id="li1"><button id="nav-btn4" class="nav-btn">Contabilitate</button>
+            <ul id="ndrop1" class="drop ndrop">
+                <li id="m1" data-page="contabilitate" data-section="completa">Contabilitate Completa</li>
+                <li id="m2" data-page="contabilitate" data-section="salarizare">Salarizare</li>
+                <li id="m3" data-page="contabilitate" data-section="analiza">Analiza Financiara</li>
+                <li id="m4" data-page="contabilitate" data-section="juridice">Servicii Juridice</li>
+            </ul></li>
+            
+            <li id="li2"><button id="nav-btn5" class="nav-btn">Audit</button>
+            <ul id="ndrop2" class="drop ndrop">
+                <li id="m5" data-page="audit" data-section="audit-financiar">Audit Financiar</li>
+                <li id="m6" data-page="audit" data-section="audit-statutar">Audit Statutar</li>
+            </ul></li>
+
+            <li id="li3"><button id="nav-btn6" class="nav-btn">Evaluari Imobiliare</button>
+            <ul id="ndrop3" class="drop ndrop">
+                <li id="m7" data-page="evaluare" data-section="evaluare">Evaluare</li>
+                <li id="m8" data-page="evaluare" data-section="acte">Acte Necesare</li>
+            </ul></li>
+
+            <li><button id="contact"  data-footer="contabilitate" data-target="footerid" class="nav-btn">Contact</button></li>
+        </ul>
+        </div>
+    </div>
+
+        <br><br>
+        <!--CONTENT-->
+        <section class="content">
+  <h1 id="spec1">Servicii de Contabilitate</h1>
+  <p id="spec2">La Profinex, oferim un pachet complet de servicii contabile, adaptate nevoilor fiecărui client – de la firme mici până la companii mari. Fiecare serviciu este gândit să îți ofere siguranță, claritate și eficiență.</p>
+<br>
+  <article id="completa">
+    <h2>Contabilitate completă</h2>
+    <p>Serviciile noastre de contabilitate completă acoperă întreaga activitate financiar-contabilă a firmei tale, conform celor mai recente norme legislative:</p>
+    <ul>
+      <li>Înregistrarea documentelor contabile (facturi, chitanțe, extrase bancare etc.)</li>
+      <li>Întocmirea și depunerea declarațiilor fiscale (lunare, trimestriale, anuale)</li>
+      <li>Generarea balanțelor, jurnalelor și registrelor obligatorii</li>
+      <li>Întocmirea situațiilor financiare anuale</li>
+      <li>Consultanță privind optimizarea fiscală</li>
+    </ul>
+    <p>Lucrăm transparent și adaptăm soluțiile contabile la specificul fiecărei afaceri, pentru a evita riscuri și a maximiza performanța financiară.</p>
+  </article>
+
+  <article id="salarizare">
+    <h2>Salarizare și administrare personal</h2>
+    <p>Gestiunea corectă a angajaților este esențială. Ne ocupăm de tot ce înseamnă salarizare, astfel încât tu să fii mereu în regulă cu legislația muncii:</p>
+    <ul>
+      <li>Calculul salariilor, impozitelor și contribuțiilor sociale</li>
+      <li>Întocmirea statelor de plată și fluturașilor salariali</li>
+      <li>Generarea și transmiterea declarației D112</li>
+      <li>Întocmirea și gestionarea contractelor de muncă</li>
+      <li>Înscrierea și actualizarea datelor în Revisal</li>
+      <li>Consultanță în legislația muncii și relațiile de muncă</li>
+    </ul>
+    <p>Poți externaliza complet acest proces, iar noi ne asigurăm că totul este la zi, fără întârzieri sau erori.</p>
+  </article>
+
+  <article id="analiza">
+    <h2>Analiză financiară</h2>
+    <p>Oferim o imagine clară și detaliată asupra performanței financiare a afacerii tale, prin instrumente de analiză profesională:</p>
+    <ul>
+      <li>Evaluarea indicatorilor economici: lichiditate, profitabilitate, solvabilitate</li>
+      <li>Interpretarea balanțelor și a contului de profit și pierdere</li>
+      <li>Rapoarte periodice pentru management sau investitori</li>
+      <li>Diagnoză financiară și propuneri de eficientizare</li>
+      <li>Simulări și previziuni bugetare</li>
+    </ul>
+    <p>Analizele noastre te ajută să iei decizii informate și să planifici sustenabil dezvoltarea afacerii tale.</p>
+  </article>
+
+  <article id="juridice">
+    <h2>Servicii juridice conexe</h2>
+    <p>Oferim suport juridic prin colaboratori specializați în drept fiscal, comercial și al muncii. Printre cele mai solicitate servicii:</p>
+    <ul>
+      <li>Asistență la redactarea și revizuirea contractelor comerciale</li>
+      <li>Consultanță juridică în domeniul fiscal și în relațiile cu ANAF</li>
+      <li>Sprijin în constituirea, modificarea și dizolvarea firmelor</li>
+      <li>Reprezentare în fața instituțiilor statului (prin parteneri avocați)</li>
+      <li>Verificarea conformității actelor și procedurilor</li>
+    </ul>
+    <p>Îți oferim siguranță juridică în fiecare etapă a dezvoltării firmei tale.</p>
+  </article>
+</section>
+
+
+    <div id="ac"></div>
+
+
+
+
+<!--<p class="lucru">In Lucru!</p><p class="lucru">Marca  ×꧁♤Mihคi♤꧂× production!</p>-->
+    <script src="firstbtn.js"></script>
+    <script src="action.js"></script>
+
+    <footer id="footerid">
+        <div id="cont-footer">
+            <div id="footer-flex">
+                <div id="flex1" class="flexx">
+                <div id="flex2" class="flexx">
+                    <p>Contact:</p>
+                    <p><a id="spec" href="mailto:contact.profinex@gmail.com">contact.profinex@gmail.com</a></p>
+                </div>
+            </div>
+            <p>&copy; 2025 Profinex. Toate drepturile rezervate.</p>
+        </div>
+    </footer>
+</body>
+</html>
